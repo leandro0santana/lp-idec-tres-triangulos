@@ -1,0 +1,182 @@
+.desktop{display:inline;}
+.mobile{display:none;}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: "Helvetica-Condensed-Bold", Arial, Helvetica, sans-serif;
+}
+.bg-black{
+    background-color: #000000;
+}
+.bg-white{
+    background-color: #ffffff;
+    padding: 10px;
+}
+.bg-white-footer{
+    background-color: #ffffff;
+}
+.bg-salmon{
+    background-color: #ed2340;
+    padding: 20px;
+}
+.bg-yellow{
+    background-color: #fcdd04;
+    padding: 10px;
+}
+.distancia{
+    padding: 20px;
+}
+.distancia-header{
+	padding-top: 40px;
+}
+.distancia-center{
+	text-align: center;
+	padding: 20px;
+}
+.distancia-mobile{
+    padding: 7px;
+}
+.distancia-combox{
+    padding-top: 60px;
+}
+.distancia-combox-p{
+    padding-top: 45px;
+}
+.distancia-combo{
+    padding-top: 40px;
+}
+.text-distancia{
+    color:#ffffff;
+    padding: 30px;
+    font-weight: 500;
+}
+.text-header-white{
+    color: #ffffff;
+    font-weight: 600;
+	line-height: 40px;
+	padding-left: 40px;
+}
+.text-header-salmon{
+    color: #ed2340;
+    font-weight: 600;
+	line-height: 40px;
+	padding-left: 40px;
+}
+.color-salmon{
+    color: #ed2340;
+    font-weight: 600;
+}
+.color-white{
+    color: #ffffff;
+    font-weight: 600;
+}
+.color-black{
+    color: #000000;
+    font-weight: 800;
+}
+.bordar{
+    border:1px solid #ffffff;
+    border-radius: 20px;
+}
+.border-image{
+    border-radius: 20px;
+}
+.text-corpo{
+    color:#ffffff;
+    padding: 20px;
+    font-size: 17px;
+}
+.text-mobile{
+    color:#ffffff;
+    padding: 15px;
+}
+.text-mobile-border{
+    color:#ffffff;
+    padding: 15px;
+    font-size: 14px;
+}
+.text-passo{
+    columns: #000000;
+}
+.text-salmon{
+    color:#ed2340;
+    font-size: 22px;
+}
+.text-salmon-mobile{
+    color:#ed2340;
+    font-size: 20px;
+}
+.text-titulo{
+    color:#ffffff;
+    font-weight: 800;
+}
+.texto-footer{
+    color:#a3a3a3;
+    padding-top: 15px;
+}
+.img-modal{
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/*Visual da janela Modal*/
+.modalVisual{ /*Classe*/
+    display:none; /*Esconder a janela por padrão*/
+    position:fixed;/*Permanecer na posição fixa*/
+    z-index:1; /*Posicionar no topo da pilha*/
+    padding-top:100px;/*Margem interna superior*/
+    left:0; /*Posição X*/
+    top:0; /*Posição Y*/
+    width:100%; /*Largura total da tela*/
+    height:100%; /*Altura total da tela*/
+    overflow:auto; /*Barra de rolagem se necessário*/
+    background-color:rgba(0,0,0,0.8); /*Cor de fundo e opacidade de 80%*/
+}
+
+/*Conteúdo da Janela Modal (imagem)*/
+.modalConteudo{ /*Classe*/
+    margin:auto; /*Margens em auto para que o conteúdo fique no centro*/
+    display:block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
+    width:100%; /*Largura total disponível*/
+    max-width:800px; /*Largura máxima permitida, então width:100%; é igual a 800px*/
+}
+
+/*Texto da Imagem*/
+#txtImg{
+    margin:auto; /*Centralizar o conteúdo*/
+    display:block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
+    width:80%; /*Largura*/
+    max-width:700px; /*Largura máxima permitida*/
+    text-align:center; /*Alinhamento do texto ao centro*/
+    color:#ccc; /*Cor do texto*/
+    padding:10px 0; /*Margem interna*/
+    height:150px; /*Altura*/
+}
+
+/* Botão X para fechar */
+.fechar{ /*Classe*/
+    position:absolute; /*Permite o posicionamento do element usando top e left*/
+    top:15px; /*Posição Y*/
+    right:35px; /*Posição direita*/
+    color:#fff; /*Cor do texto*/
+    font-size:40px; /*Tamanho da fonte*/
+    font-weight:bold; /*Negrito*/
+    cursor:pointer; /*Tipo do cursor*/
+}
+@media(max-width:700px){
+    .mobile{display:inline;}
+    .desktop{display:none;}
+    .table{display:none;}
+    .text-header-white{
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .text-header-salmon{
+        color: #ed2340;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .distancia{
+        padding: 10px;
+    }
+}
